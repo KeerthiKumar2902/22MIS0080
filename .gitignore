@@ -1,4 +1,5 @@
 node_modules/
+logging_middleware/node_modules/
 .env
 .DS_Store
 implementation_plan.md
