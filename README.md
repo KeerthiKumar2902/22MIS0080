@@ -140,11 +140,4 @@ cd notification_app_be && node app.js
 ### Priority Inbox — Top 10 Notifications
 ![Priority Top 10](notification_app_be/screenshots/priority_top10.jpeg)
 
-## Engineering Notes
 
-- Modular folder structure — controllers, services, routes, algorithms are separated
-- Centralized logging via shared middleware package
-- No `console.log` usage across the entire codebase
-- Environment variables for all secrets and config
-- Proper error handling with structured error responses
-- Each service runs independently on its own port
