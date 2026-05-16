@@ -2,9 +2,13 @@ require('dotenv').config({ path: '../.env' });
 const express = require('express');
 const { Log } = require('../logging_middleware/logger');
 
+const scheduleRoutes = require('./routes/scheduleRoutes');
+
 const app = express();
 
 app.use(express.json());
+
+app.use('/api/schedule', scheduleRoutes);
 
 app.listen(3000, async () => {
     process.stdout.write("Server running on port 3000\n");
