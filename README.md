@@ -58,11 +58,11 @@ The core optimization problem: given a set of vehicle maintenance tasks (each wi
 
 This maps directly to the **0/1 Knapsack Problem**:
 
-| Knapsack Term | Domain Term    |
-|---------------|----------------|
-| Weight        | Duration       |
-| Value         | Impact         |
-| Capacity      | MechanicHours  |
+| Knapsack Term | Domain Term   |
+| ------------- | ------------- |
+| Weight        | Duration      |
+| Value         | Impact        |
+| Capacity      | MechanicHours |
 
 The solution uses bottom-up dynamic programming with backtracking to recover selected tasks. Time complexity is `O(n × capacity)` where `n` is the number of tasks.
 
@@ -135,10 +135,10 @@ cd notification_app_be && node app.js
 ![Schedule Depot 5](vehicle_maintenance_scheduler/screenshots/schedule_depot5.jpeg)
 
 ### Priority Inbox — Top 5 Notifications
-![Priority Top 5](vehicle_maintenance_scheduler/screenshots/priority_top5.jpeg)
+![Priority Top 5](notification_app_be/screenshots/priority_top5.jpeg)
 
 ### Priority Inbox — Top 10 Notifications
-![Priority Top 10](vehicle_maintenance_scheduler/screenshots/priority_top10.jpeg)
+![Priority Top 10](notification_app_be/screenshots/priority_top10.jpeg)
 
 ## Engineering Notes
 
